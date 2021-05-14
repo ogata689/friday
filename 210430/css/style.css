@@ -1,0 +1,63 @@
+body{
+    background-color:#eee;
+}
+
+header{
+    margin: 0;
+    padding: 16px;
+    background-color: #123;
+    color: #fff;
+}
+
+.site-title{
+    font-size: 24px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #f00;
+    width: 700px;
+}
+
+main{
+    margin: 16px;
+}
+
+.main-title{
+    font-size: 20px;
+border-bottom: 2px dashed #333;
+}
+
+.contents-item{
+    margin: 16px;
+    padding: 16px;
+    border: 1px soild #333;
+    background-color: #ccc;
+}
+
+.contents-item-title{
+    padding: 0 0 8px 0;
+    font-weight: normal;
+    border-bottom: 2px dotted #fff;
+}
+
+.contents-item-text{
+    font-size: 14px;
+}
+
+.contents-item-drop{
+    padding: 16px;
+    background-color: #fff;
+}
+
+.nav{
+    margin: 16px;
+}
+
+.nav-li{
+    border-bottom: 2px dotted #ccc;
+
+}
+
+#footer{
+    color: white;
+    padding: 16px;
+    background-color: #333;
+}

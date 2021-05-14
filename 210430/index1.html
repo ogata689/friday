@@ -5,26 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webサイトを作るうえで必要なもの</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
+        <h1 class="site-title">webサイトを作るうえで必要なもの</h1>
+    </header>
+    <main>
         <article>
-            <h1>webサイトを作るうえで必要なもの</h1>
-
-            <h2>htmlについて</h2>
-        </header>
-        <main>
-            <section>
-                <h3>hタグ、見出しを表すタグ</h3>
-                <p>見出しを表します。h1からh6まで</p>
+                <h2 class="main-title">htmlについて</h2>
+                <ul class="nav">
+                    <li class="nav-li"><a href="#h3-1">h</a></li>
+                    <li class="nav-li"><a href="#h3-2">ｐ</a></li>
+                    <li class="nav-li"><a href="#h3-3">li</a></li>
+                    <li class="nav-li"><a href="#h3-4">dd,dl,dt</a></li>
+                    <li class="nav-li"><a href="#h3-5">em,strong</a></li>
+                    <li class="nav-li"><a href="#h3-6">div</a></li>
+                </ul>
+                <section  class="contents-item">
+                <h3 class="contents-item-title" id="h3-1">hタグ、見出しを表すタグ</h3>
+                <p class="contents-item-text">見出しを表します。h1からh6まで</p>
             </section>
 
-            <section>
-                <h3>p、文章・段落</h3>
-                <p>文章や段落を表すタグ</p>
+            <section class="contents-item">
+                <h3 class="contents-item-title" id="h3-2">p、文章・段落</h3>
+                <p class="contents-item-text">文章や段落を表すタグ</p>
             </section>
 
-            <section>
+            <section class="contents-item">
+                <h3 class="contents-item-title" id="h3-3">ul,li</h3>
                 <ul>
                     <li>リスト1</li>
                     <li>リスト2</li>
@@ -52,20 +61,18 @@
                 </ol>
             </section>
 
-            <section>
-                <h3>dl、dd、dt　定義付きリスト</h3>
-                <p>定義付きリスト</p>
+            <section class="contents-item">
+                <h3 class="contents-item-title" id="h3-4">dl、dd、dt　定義付きリスト</h3>
+                <p class="contents-item-text">定義付きリスト</p>
 
                 <dl>
                     <dt>メニュー１</dt>
                     <dd>メニュー1の説明</dd>
-                    
                     <dt>メニュー２</dt>
                     <dd>メニュー２の説明</dd>
                 </dl>
-                <section>
-                    <h4>dlリストの使用例</h4>
-                    
+                <section class="contents-item">
+                    <h4 class="contents-item-drop">dlリストの使用例</h4>
                     <dl>
                         <dt>sns</dt>
                         <dd><a href="htpps://twitter.com">twitter</a></dd>
@@ -74,24 +81,24 @@
                 </section>
             </section>
 
-            <section>
-                <h3>emとstrong　強調、重要性</h3>
-                <p><em>emが強調</em>を表す <strong>strongが強い重要性</strong>を表す</p>
+            <section class="contents-item" id="h3-6">
+                <h3 class="contents-item-title" id="h3-5">emとstrong　強調、重要性</h3>
+                <p class="contents-item-text"><em>emが強調</em>を表す <strong>strongが強い重要性</strong>を表す</p>
 
-                <h3>small</h3>
-                <p>責・警告・法的規制・著作権・ライセンス要件などの注釈や細目を表す際に使う</p>
+                <h3 class="contents-item-title">small</h3>
+                <p class="contents-item-text">責・警告・法的規制・著作権・ライセンス要件などの注釈や細目を表す際に使う</p>
 
                 <figure>
                     <img src="C:\Users\mgtna\Documents\gakko\2021\wd\210506\trashkan\img01.jpg" wigth="400" alt="入学">
                     <figcaption>入学式の画像</figcaption>
                 </figure>
 
-                <p>テキストを画像にしたものは、、fiureでマークアップではなく、適切なタグで</p>
+                <p class="contents-item-text">テキストを画像にしたものは、、fiureでマークアップではなく、適切なタグで</p>
             </section>
 
-            </section>
-                <h3>div,span</h3>
-                <p>特に意味を表さない。なるべく使わないでいったん考える。ただ、どうしてもグループ化したり、見た目の調整に必要な場合のみ使うかどうかを考える</p>
+            </section class="contents-item">
+                <h3 class="contents-item-title" id="h3-6">div,span</h3>
+                <p class="contents-item-text">特に意味を表さない。なるべく使わないでいったん考える。ただ、どうしてもグループ化したり、見た目の調整に必要な場合のみ使うかどうかを考える</p>
                 <div>test</div>
                 <div>test</div>
                 <span>test</span>
