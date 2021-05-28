@@ -154,13 +154,19 @@
             </section>
 
             <section class="contents">
-                <h3 class="contents-head">お問い合わせ</h3>
-                <p class="contents-head-p">inquiry</p>
+                <h3 class="contents-head">お問い合わせ<span>inquiry</span></h3>
 
-                <p class="contents-form-p">お名前 (必須)</p>
-                <p class="contents-form-p">メールアドレス (必須)</p>
-                <p class="contents-form-p">題名</p>
-                <p class="contents-form-p">メッセージ本文</p>
+                <form action="">
+                    <fieldset>
+                        <p class="contents-form-p"><label for="name">お名前 (必須)</label>
+                        <input id="id" type="text" name="name" placeholder="名前を入力してください"></p>
+                        <p class="contents-form-p"><label for="email">メールアドレス (必須)</label><input id="email" type="email" name="email"></p>
+                        <p class="contents-form-p"><label for="textarea">題名</label>
+                        <textarea name="textarea" id="submit" cols="20" rows="1" aria-placeholder="題名を入力してください"></textarea></p>
+                        <p class="contents-form-p"><label for="textarea">メッセージ本文</label>
+                        <textarea name="textarea" id="submit" cols="40" rows="10" aria-placeholder="メッセージ本文を入力してください"></textarea></p>
+                    </fieldset>
+                </form>
 
             </section>
         </article>
