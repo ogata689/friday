@@ -143,12 +143,12 @@
             <section class="contents">
                 <h3 class="contents-head">会社紹介<span>company</span></h3>
 
-                <dl class="contents-list-dt">
-                    <dt class="contents-list-dl">会社名</dt>
+                <dl class="contents-list-dl">
+                    <dt class="contents-list-dt">会社名</dt>
                     <dd class="contents-list-dd">株式会社ルーシー</dd>
-                    <dt class="contents-list-dl">電話番号</dt>
+                    <dt class="contents-list-dt">電話番号</dt>
                     <dd class="contents-list-dd">03-1111-2222</dd>
-                    <dt class="contents-list-dl">住所</dt>
+                    <dt class="contents-list-dt">住所</dt>
                     <dd class="contents-list-dd">東京都港区西新橋２-７-４ CJビル11階</dd>
                 </dl>
             </section>
@@ -158,13 +158,16 @@
 
                 <form action="">
                     <fieldset>
-                        <p class="contents-form-p"><label for="name">お名前 (必須)</label>
-                        <input id="id" type="text" name="name" placeholder="名前を入力してください"></p>
-                        <p class="contents-form-p"><label for="email">メールアドレス (必須)</label><input id="email" type="email" name="email"></p>
-                        <p class="contents-form-p"><label for="textarea">題名</label>
-                        <textarea name="textarea" id="submit" cols="20" rows="1" aria-placeholder="題名を入力してください"></textarea></p>
-                        <p class="contents-form-p"><label for="textarea">メッセージ本文</label>
-                        <textarea name="textarea" id="submit" cols="40" rows="10" aria-placeholder="メッセージ本文を入力してください"></textarea></p>
+                        <dl class="contents-form-dl">
+                            <dt class="contents-form-dt"><label for="name">お名前 (必須)</label></dt>
+                            <dd class="contents-form-dd"><input id="id" type="text" name="name" placeholder="名前を入力してください"></dd>
+                            <dt class="contents-form-dt"><label for="email">メールアドレス (必須)</label></dt>
+                            <dd class="contents-form-dd"><input id="email" type="email" name="email"></dd>
+                            <dt class="contents-form-dt"><label for="ttitle">題名</label></dt>
+                            <dd class="contents-form-dd"></dd><input id="title" type="text" name="title" placeholder="題名を入力してください"></dd>
+                            <dt class="contents-form-dt"><label for="textarea">メッセージ本文</label></dt>
+                            <dd class="contents-form-dd"><textarea name="textarea" id="submit" cols="40" rows="10" aria-placeholder="メッセージ本文を入力してください"></textarea></dd>
+                        </dl>
                     </fieldset>
                 </form>
 
