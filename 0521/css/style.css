@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#header{
+    background-color: #428390;
+    height: 92px;
+    position: relative;
+}
+
+.header-title{
+    font-size: 18px;
+}
+
+.header-title a{
+color: #fff;
+text-decoration: none;
+}
+
+.gnav{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
