@@ -12,6 +12,8 @@
 }
 
 .header-title{
+    margin: 0 16px;
+    line-height: 92px;
     font-size: 18px;
 }
 
@@ -24,4 +26,56 @@ text-decoration: none;
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    font-size: 14px;
+}
+
+.gnav-item{
+    list-style-type: none;
+    line-height: 92px;
+}
+
+.gnav-item a{
+    padding: 0 16px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: all 0.1s ease-in;
+}
+
+.gnav-item a:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.main-area{
+    background: #41Baa0;
+    height: 500px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.site-title{
+    margin: 16px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.site-description{
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 2;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.entry-title{
+    font-size: 24px;
+    font-weight: normal;
+    padding: 16px 0 ;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
 }
