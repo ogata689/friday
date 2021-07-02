@@ -131,6 +131,7 @@ text-decoration: none;
     text-align: center;
     font-weight: normal;
     position:relative;
+    z-index: 1;
 }
 
 .contents-title:after{
@@ -153,3 +154,76 @@ text-decoration: none;
     display: block;
 }
 
+.contents-item{
+    padding: 0 32px;
+    height: 440px;
+    position:relative;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+
+.contents-item:nth-child(odd){ /*奇数*/
+    padding-right: 693px;
+}
+
+.contents-item:nth-child(even){ /*偶数*/
+    padding-right: 693px;
+    background-color: #fafafa;
+}
+
+.contents-item-title-num{
+    padding-top: 40px;
+    margin-bottom: 40px;
+    display: block;
+    width: 32px;
+    text-align: center;
+    background-color: #47b39d;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contents-item-title{
+    margin-bottom: 24px;
+    color: #47b39d;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.contents-item-txt{
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.contents-item-title-en{
+    font-size: 14px;
+    display:block;
+}
+
+.contents-item-img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.contents-item-img img{
+    width: 661px;
+}
+
+.contents-item:nth-child(even) .contents-item-img{
+    left: 0;
+}
+
+.button a{
+    padding: 8px;
+    display: block;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.orange{
+    background-color:#ff6c00;
+}
