@@ -205,7 +205,7 @@ text-decoration: none;
     right: 0px;
 }
 
-.contents-item-img img{
+.contents-item img{
     width: 661px;
 }
 
@@ -226,4 +226,38 @@ text-decoration: none;
 
 .orange{
     background-color:#ff6c00;
+}
+
+.blue a{
+    background-color: #47b39d;
+}
+
+.services{
+    display: flex;
+}
+
+.service{
+    width: 50%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service:first-child{
+    border-right: 1px solid #ccc;
+}
+
+.service-title{
+    margin-bottom: 16px;
+    color: #47b39d;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.service-title-en{
+    font-size: 14px;
+    display: block;
 }
