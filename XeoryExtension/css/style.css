@@ -301,7 +301,8 @@ text-decoration: none;
 }
 
 .contents-form{
-    width: 632px;
+    width: 100%;
+    max-width: 590px;
     margin: 0px auto;
 }
 
@@ -313,7 +314,6 @@ text-decoration: none;
 
 .contents-form-txtbox input{
     width: 100%;
-    max-width: 590px;
     padding: 8px 16px;
     border: 0;
     border-radius: 4px;
@@ -321,7 +321,6 @@ text-decoration: none;
 
 .contents-form-txtbox textarea{
     width: 100%;
-    max-width: 590px;
     padding: 8px 16px;
     border: 0;
     border-radius: 4px;
