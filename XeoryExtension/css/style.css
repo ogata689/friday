@@ -291,7 +291,7 @@ text-decoration: none;
     box-sizing: border-box;
 }
 
-.bg-green{
+.inquiry{
     background-color: #47B39d;
 }
 
@@ -312,14 +312,16 @@ text-decoration: none;
 }
 
 .contents-form-txtbox input{
-    width: 590px;
+    width: 100%;
+    max-width: 590px;
     padding: 8px 16px;
     border: 0;
     border-radius: 4px;
 }
 
 .contents-form-txtbox textarea{
-    width: 590px;
+    width: 100%;
+    max-width: 590px;
     padding: 8px 16px;
     border: 0;
     border-radius: 4px;
