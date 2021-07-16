@@ -93,10 +93,10 @@
 
             <section class="contents">
                 <h3 class="contents-title">XeoryExtensionの特徴<span class="contents-title-en">feature</span></h3>
-                <div>
+                <div class="contents-list">
                     <section class="contents-item">
                         <h4 class="contents-item-title"><span class="contents-item-title-num">1</span>モバイルレスポンシブ<span class="contents-item-title-en">Mobile Responsive</span></h4>
-                        <figure class="contets-item-img">
+                        <figure class="aho">
                             <img src="https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/macbook-at-the-coffee-shop.jpg" alt="">
                         </figure>
                         <p class="contents-item-txt">Xeory Extensionはレスポンシブデザインを採用しています。スマートフォンやタブレットなど各種デバイスで表示が最適化されます。</p>
@@ -105,7 +105,7 @@
     
                     <section class="contents-item">
                         <h4 class="contents-item-title"><span class="contents-item-title-num">2</span>SEO最適化<span class="contents-item-title-en">Search Engine Optimized</span></h4>
-                        <figure class="contets-item-img">
+                        <figure class="aho">
                             <img src="https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/macbook-at-the-coffee-shop.jpg" alt="">
                         </figure>
                         <p class="contents-item-txt">Xeory ExtensionはGoogleのSEOガイドラインに可能な限り沿った構造になっています。必要なのは良質なコンテンツだけです。</p>
@@ -114,7 +114,7 @@
     
                     <section class="contents-item">
                         <h4 class="contents-item-title"><span class="contents-item-title-num">3</span>高いカスタマイズ性<span class="contents-item-title-en">Customizable</span></h4>
-                        <figure class="contets-item-img">
+                        <figure class="aho">
                             <img src="https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/macbook-at-the-coffee-shop.jpg" alt="">
                         </figure>
                         <p class="contents-item-txt">Xeory Extensionはカスタマイズフリーです。CSS, HTML, PHP の知識があれば自由にカスタマイズすることができます。</p>
@@ -153,21 +153,20 @@
                 </dl>
             </section>
 
-            <section class="contents">
+            <section class="contents bg-green">
                 <h3 class="contents-title">お問い合わせ<span>inquiry</span></h3>
 
-                <form action="">
+                <form  class="form-out" action="">
                     <dl class="contents-form">
                         <dt class="contents-form-txt"><label for="name">お名前 (必須)</label></dt>
                         <dd class="contents-form-txtbox"><input id="id" type="text" name="name" placeholder="名前を入力してください"></dd>
                         <dt class="contents-form-txt"><label for="email">メールアドレス (必須)</label></dt>
                         <dd class="contents-form-txtbox""><input id="email" type="email" name="email"></dd>
                         <dt class="contents-form-txt"><label for="ttitle">題名</label></dt>
-                        <dd class="contents-form-txtbox""></dd><input id="title" type="text" name="title" placeholder="題名を入力してください"></dd>
+                        <dd class="contents-form-txtbox""><input id="title" type="text" name="title" placeholder="題名を入力してください"></dd>
                         <dt class="contents-form-txt"><label for="textarea">メッセージ本文</label></dt>
                         <dd class="contents-form-txtbox""><textarea name="textarea" id="submit" cols="40" rows="10" aria-placeholder="メッセージ本文を入力してください"></textarea></dd>
                     </dl>
-
                     <p class="button black"><a href="">送信</a></p>
                 </form>
 
@@ -178,18 +177,20 @@
     <footer id="footer">
         <section class="footer">
             <h2 class="footer-title">XeoryExtension</h2>
-            <dl class="footer-list">
-                <dt class="footer-list-title">ブログコンテンツ</dt>
-                <dd class="footer-list-link"><a href="">記事ページサンプル</a></dd>
-                <dd class="footer-list-link"><a href="">Extensionをダウンロード</a></dd>
-            </dl>
-            <dl class="footer-list">
-                <dt class="footer-list-title">ソーシャルメディア</dt>
-                <dd class="footer-list-link"><a href="">Twitter</a></dd>
-                <dd class="footer-list-link"><a href="">Facebook</a></dd>
-                <dd class="footer-list-link"><a href="">Google+</a></dd>
-                <dd class="footer-list-link"><a href="">Feedly</a></dd>
-            </dl>
+            <div class="footer-list">
+                <dl class="footer-list-item">
+                    <dt class="footer-list-title">ブログコンテンツ</dt>
+                    <dd class="footer-list-link"><a href="">記事ページサンプル</a></dd>
+                    <dd class="footer-list-link"><a href="">Extensionをダウンロード</a></dd>
+                </dl>
+                <dl class="footer-list-item">
+                    <dt class="footer-list-title">ソーシャルメディア</dt>
+                    <dd class="footer-list-link"><a href="">Twitter</a></dd>
+                    <dd class="footer-list-link"><a href="">Facebook</a></dd>
+                    <dd class="footer-list-link"><a href="">Google+</a></dd>
+                    <dd class="footer-list-link"><a href="">Feedly</a></dd>
+                </dl>
+            </div>
             <p class="copyright"><small>&copy;  Copyright 2021 XeoryExtension. All rights reserved.</small></p>
         </section>
     </footer>
