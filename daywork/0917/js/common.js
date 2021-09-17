@@ -139,30 +139,28 @@
 //     console.log(i,j)
 // }
 
-for(let i = 0;i <= 100;i++){
-    if(i % 2 === 0 && i !== 0){
-        console.log(i)
-    }
-}
+// for(let i = 0;i <= 100;i++){
+//     if(i % 2 === 0 && i !== 0){
+//         console.log(i)
+//     }
+// }
 
-for(let i = 0;i <= 100;i++){
-    if(i >= 10 && i <= 30){
-        console.log(i)
-    }else if(i >= 70 && i <= 90){
-        console.log(i)
-    }
-}
+// for(let i = 0;i <= 100;i++){
+//     if(i >= 10 && i <= 30){
+//         console.log(i)
+//     }else if(i >= 70 && i <= 90){
+//         console.log(i)
+//     }
+// }
 
-for(let i = 0;i <= 100;i++){
-    if(i % 3 === 0 && i !== 0){
-        console.log(i)
-    }
-}
+// for(let i = 0;i <= 100;i++){
+//     if(i % 3 === 0 && i !== 0){
+//         console.log(i)
+//     }
+// }
 
-for(let i = 1900;i <= 2100;i++){
-    if(i % 4 === 0 && i % 100 !== 0){
-        console.log(i)
-    }else if(i % 400 === 0){
+for(let i = 1900;i <= 2100;i++ ){
+    if(i % 4 === 0 &&( i % 100 !== 0 || i % 400 === 0)){
         console.log(i)
     }
 }
