@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+}
+
+.menu-button{
+    background-color: #ddd;
+    font-size: 16px;
+    padding: 16px;
+    top: 0;
+    left: 0;
+    width: 248px;
+}
+
+.menu-button:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.gnav{
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 280px;
+    height: 100%;
+    color: #fff;
+    transform: translate(-280px,0);
+    transition: all 0.2s ease-out;
+}
+
+.gnav.on{
+    transform: translate(0,0);
+}
+
+.gnav-title{
+    font-size: 16px;
+    font-weight: 100;
+    padding: 16px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.gnav-close{
+    padding: 16px;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    right: 0;
+}
+
+.gnav-close:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.gnav-item a{
+    padding: 16px;
+    color: #fff;
+    line-height: 1.6;
+    display: block;
+    text-decoration: none;
+}
+
+.gnav-item a:hover{
+    background-color: rgba(255,255,255,0.2);
+}
