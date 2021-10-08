@@ -53,7 +53,7 @@ const fruits2 = {
 };
 
 for(color in fruits2){
-    console.log(color,'(',fruits2[color].join('・'),')')
+    console.log(color + '(' + fruits2[color].join('・') + ')')
 }
 
 //Q4
