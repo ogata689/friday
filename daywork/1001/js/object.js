@@ -54,26 +54,26 @@
 // }else{console.log('eller')}
 
 
-// //After
-// const janken = ['ぐー','ちょき','ぱー']
+//After
+const janken = ['ぐー','ちょき','ぱー']
 
-// const user1 = janken[Math.floor(Math.random() * janken.length)]
-// const user2 = janken[Math.floor(Math.random() * janken.length)]
+const user1 = janken[Math.floor(Math.random() * janken.length)]
+const user2 = janken[Math.floor(Math.random() * janken.length)]
 
-// console.log('user1:',user1,'  user2:',user2)
+console.log('user1:',user1,'  user2:',user2)
 
-// if(user1 === user2){
-//     console.log('あいこです')
-// }else if(
-//     user1 === 'ぐー' && user2 === 'ちょき' ||
-//     user1 === 'ちょき' && user2 === 'ぱー' ||
-//     user1 === 'ぱー' && user2 === 'ぐー'
-// ){
-//     console.log('user1の勝利です')
-// }else{console.log('user2の勝利です')}
+if(user1 === user2){
+    console.log('あいこです')
+}else if(
+    user1 === 'ぐー' && user2 === 'ちょき' ||
+    user1 === 'ちょき' && user2 === 'ぱー' ||
+    user1 === 'ぱー' && user2 === 'ぐー'
+){
+    console.log('user1の勝利です')
+}else{console.log('user2の勝利です')}
 
 
-// //js問題
+//js問題
 
 //Q1
 const num1to50 = []
