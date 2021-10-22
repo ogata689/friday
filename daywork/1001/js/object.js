@@ -73,51 +73,51 @@ if(user1 === user2){
 }else{console.log('user2の勝利です')}
 
 
-//js問題
+// //js問題
 
-//Q1
-const num1to50 = []
-const num50to1 = []
+// //Q1
+// const num1to50 = []
+// const num50to1 = []
 
-for(i = 0; i <= 50; i++){
-    num1to50.push(i)
-    num50to1.push(50 - i)
-}
+// for(i = 0; i <= 50; i++){
+//     num1to50.push(i)
+//     num50to1.push(50 - i)
+// }
 
-console.log(num1to50)
-console.log(num50to1)
-
-
-//Q2
-const fruits  = ['りんご', 'バナナ', 'パイナップル', 'ぶどう', 'すいか', 'めろん'];
-
-for(key in fruits){
-    console.log(fruits[key])
-}
+// console.log(num1to50)
+// console.log(num50to1)
 
 
-//Q3
-const fruits2 = {
-    red : ['りんご', 'さくらんぼ', 'いちご'],
-    orange : ['かき', 'みかん', 'びわ'],
-    yellow : ['バナナ', 'パイナップル', 'レモン']
-};
+// //Q2
+// const fruits  = ['りんご', 'バナナ', 'パイナップル', 'ぶどう', 'すいか', 'めろん'];
 
-for(color in fruits2){
-    console.log(color,'(',fruits2[color][0],'・',fruits2[color][1],'・',fruits2[color][2],')');
-}
+// for(key in fruits){
+//     console.log(fruits[key])
+// }
 
-//Q4
-const num = {};
-num.even = [];
-num.odd = [];
 
-for(i = 0; i <= 100; i++){
-    if(i % 2 === 0 || i === 0){
-        num.even.push(i)
-    }else{
-        num.odd.push(i)
-    }
-}
+// //Q3
+// const fruits2 = {
+//     red : ['りんご', 'さくらんぼ', 'いちご'],
+//     orange : ['かき', 'みかん', 'びわ'],
+//     yellow : ['バナナ', 'パイナップル', 'レモン']
+// };
 
-console.log(num)
+// for(color in fruits2){
+//     console.log(color,'(',fruits2[color][0],'・',fruits2[color][1],'・',fruits2[color][2],')');
+// }
+
+// //Q4
+// const num = {};
+// num.even = [];
+// num.odd = [];
+
+// for(i = 0; i <= 100; i++){
+//     if(i % 2 === 0 || i === 0){
+//         num.even.push(i)
+//     }else{
+//         num.odd.push(i)
+//     }
+// }
+
+// console.log(num)
