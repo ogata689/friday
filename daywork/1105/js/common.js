@@ -45,7 +45,7 @@ const users = [
 
 function resultantOfStudy(array,num){
     let average = 0;
-    let result = '';
+    var result = '';
     for(stat in array){
         average += array[stat]['score'];
     }
@@ -61,3 +61,7 @@ function resultantOfStudy(array,num){
 }
 
 console.log(resultantOfStudy(users,0));
+console.log(resultantOfStudy(users,1));
+console.log(resultantOfStudy(users,2));
+console.log(resultantOfStudy(users,3));
+console.log(resultantOfStudy(users,4));
