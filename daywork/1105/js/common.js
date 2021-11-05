@@ -12,11 +12,11 @@ function omikuzi(){
 
 //Q2
 function calcTheNumbersInArray(array){
-    var Ans = 0;
+    let ans = 0;
     for(num in array){
-        Ans += array[num];
+        ans += array[num];
     }
-    return Ans
+    return ans
 }
 
 //Q3
@@ -44,9 +44,9 @@ const users = [
 ];
 
 function resultantOfStudy(array,num){
-    var average = 0;
-    var result = '';
-    for(stat in array){
+    let average = 0;
+    let result = '';
+    for(let stat in array){
         average += array[stat]['score'];
     }
     average = average / array.length
