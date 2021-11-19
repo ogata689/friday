@@ -13,7 +13,7 @@ console.log(tabItems)
 let culletnum = 0
 
 prev.addEventListener('click', () => {
-    selectItem(culletnum -= 1)
+    selectItem(culletnum - 1)
 })
 
 next.addEventListener('click', () => {
@@ -35,8 +35,7 @@ function selectItem(num){
     const maxnum = tabItems.length - 1
     const minnum = 0
 
-    if(num < minnum){num = minnum}
-    else if(num > maxnum){num = maxnum}
+    num = Math.max(minnum, Math.min(maxnum, num));
 
     tabItems.forEach((tabItem, i) => {
         tabItem.classList.remove('on')
