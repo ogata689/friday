@@ -10,21 +10,21 @@ prev.addEventListener('click', () => {
 
 console.log(tabItems)
 
-let culletnum = 0
+let currentnum = 0
 
 prev.addEventListener('click', () => {
-    selectItem(culletnum - 1)
+    selectItem(currentnum - 1)
 })
 
 next.addEventListener('click', () => {
-    selectItem(culletnum + 1)
+    selectItem(currentnum + 1)
 })
 
 tabItems.forEach((tabItem) => {
     tabItem.addEventListener('click', () => {
-        culletnum = tabItems.indexOf(tabItem)
-        console.log(culletnum)
-        selectItem(culletnum)
+        currentnum = tabItems.indexOf(tabItem)
+        console.log(currentnum)
+        selectItem(currentnum)
     })
 })
 
@@ -45,5 +45,5 @@ function selectItem(num){
     tabItems[num].classList.add('on')
     contentsItems[num].classList.add('on')
 
-    culletnum = num
+    currentnum = num
 }
