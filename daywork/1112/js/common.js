@@ -1,28 +1,47 @@
-const button = document.querySelector('.button')
-const buttons = document.querySelectorAll('.button')
+const tabItems = Array.from(document.querySelectorAll('.tab-item'))
+const contentsItems = Array.from(document.querySelectorAll('.contents-item'))
+const prev = document.querySelector('.prev')
+const next = document.querySelector('.next')
 
-console.log(document)
-console.log(button)
-console.log(buttons)
 
-// button.classList.add('on')
+prev.addEventListener('click', () => {
+    console.log('a!')
+})
 
-const gnavItems = document.querySelectorAll('.gnav-item')
+console.log(tabItems)
 
-console.log(gnavItems)
+let culletnum = 0
 
-// gnavItems.forEach((gnavItem, i) => {
-//     console.log(gnavItem)
-//     console.log(i)
-//     gnavItem.classList.add('on')
-//     if(i > 1) {
-//     gnavItem.style.backgroundColor = 'yellow'
-//     }
-// })
+prev.addEventListener('click', () => {
+    if(culletnum > 0){culletnum -= 1}
+    selectItem(culletnum)
+})
 
-gnavItems.forEach((gnavItem) => {
-    gnavItem.addEventListener('click', () => {
-    gnavItem.style.backgroundColor = '#555'
-    console.log('click!!')
+next.addEventListener('click', () => {
+    if(culletnum < tabItems.length - 1){culletnum += 1}
+    selectItem(culletnum)
+})
+
+tabItems.forEach((tabItem) => {
+    tabItem.addEventListener('click', () => {
+        culletnum = tabItems.indexOf(tabItem)
+        console.log(culletnum)
+        selectItem(culletnum)
     })
 })
+
+// function -------------------------------------------------
+
+function selectItem(num){
+    tabItems.forEach((tabItem) => {
+        tabItem.classList.remove('on')
+    })
+    contentsItems.forEach((contentsItem) => {
+        contentsItem.classList.remove('on')
+    })
+
+    tabItems[num].classList.add('on')
+    contentsItems[num].classList.add('on')
+
+    culletnum = num
+}

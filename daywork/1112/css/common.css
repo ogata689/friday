@@ -10,15 +10,16 @@
 }
 
 .controle{
+    width: 614px;
     display: flex;
-    padding: 12px 4px;
+    justify-content: space-between;
+    margin: 12px;
 }
 
 .prev,
 .next{
     width: 100px;
     padding: 12px;
-    margin: 0 4px;
     text-align: center;
     color: #fff;
     background-color: #888;
@@ -26,6 +27,7 @@
     list-style: none;
     text-align: center;
     cursor: pointer;
+    transition: all 0.1s ease-in;
 }
 
 .prev:hover,
@@ -34,12 +36,13 @@
 }
 
 .tab{
+    width: 614px;
     display: flex;
-    margin: 0 12px;
+    margin: 12px;
 }
 
 .tab-item{
-    width: 120px;
+    width: 100%;
     padding: 12px;
     text-align: center;
     color: #333;
@@ -49,33 +52,40 @@
     list-style: none;
     text-align: center;
     cursor: pointer;
+    transition: all 0.1s ease-in;
 }
 
-.tab-item:hover,
-.tab-item.on{
+.tab-item:hover{
     background-color: #ccc;
     border: 1px solid #bbb;
 }
 
-.content-item{
-    border: 3px solid #aaa;
-    margin: 12px 12px;
-    padding: 4px;
+.tab-item.on{
+    background-color: #bbb;
+    border: 1px solid #aaa;
 }
 
-.content-item.on{
+.contents-item{
+    width: 600px;
+    border: 3px solid #aaa;
+    margin: 12px;
+    padding: 4px;
+    display: none;
+}
+
+.contents-item.on{
     display: block;
 }
 
-.content-item-title{
+.contents-item-title{
     color: #333;
     font-size: 18px;
     padding: 8px 18px;
     border-bottom: 2px dotted #aaa;
 }
 
-.content-item-text{
+.contents-item-text{
     color: #333;
     font-size: 16px;
-    padding: 12px 24px;
+    padding: 12px 18px;
 }
