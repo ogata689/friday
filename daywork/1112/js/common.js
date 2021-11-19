@@ -13,13 +13,11 @@ console.log(tabItems)
 let culletnum = 0
 
 prev.addEventListener('click', () => {
-    if(culletnum > 0){culletnum -= 1}
-    selectItem(culletnum)
+    selectItem(culletnum -= 1)
 })
 
 next.addEventListener('click', () => {
-    if(culletnum < tabItems.length - 1){culletnum += 1}
-    selectItem(culletnum)
+    selectItem(culletnum + 1)
 })
 
 tabItems.forEach((tabItem) => {
@@ -33,11 +31,16 @@ tabItems.forEach((tabItem) => {
 // function -------------------------------------------------
 
 function selectItem(num){
-    tabItems.forEach((tabItem) => {
+
+    const maxnum = tabItems.length - 1
+    const minnum = 0
+
+    if(num < minnum){num = minnum}
+    else if(num > maxnum){num = maxnum}
+
+    tabItems.forEach((tabItem, i) => {
         tabItem.classList.remove('on')
-    })
-    contentsItems.forEach((contentsItem) => {
-        contentsItem.classList.remove('on')
+        contentsItems[i].classList.remove('on')
     })
 
     tabItems[num].classList.add('on')
